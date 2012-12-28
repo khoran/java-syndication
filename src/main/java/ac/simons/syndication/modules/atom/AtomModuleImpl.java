@@ -63,6 +63,19 @@ public class AtomModuleImpl extends ModuleImpl implements AtomModule {
 		this.setContent(module.getContent().clone());		
 	}
 
+   public Object clone() {
+
+       AtomModuleImpl info = new AtomModuleImpl();
+
+       info.copyFrom(this);
+
+
+       return info;
+
+   }
+
+
+
 	@Override
 	public AtomContent getContent() {
 		return this.content;

@@ -6,6 +6,16 @@
 	<version>0.0.3-SNAPSHOT</version>
 	<name>java-syndication</name>
 	<description>Modules and utilities to use in ROME</description>
+
+
+	<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Nexus Repo Snapshots</name>
+	   <url>https://intranet.globalrecordings.net/mvn/content/repositories/snapshots</url>
+    </repository>
+  </distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>

@@ -49,6 +49,8 @@ public class AtomContent implements Serializable, Cloneable {
 	private List<Link> links;
 
 	public List<Link> getLinks() {
+		if(links == null)
+			this.setLinks(new ArrayList<Link>());
 		return links;
 	}
 
